@@ -1,6 +1,6 @@
 [package]
 name = "bevy_egui"
-version = "0.41.1"
+version = "0.42.0"
 rust-version = "1.95.0"
 authors = ["vladbat00 <vladyslav.batyrenko@gmail.com>"]
 description = "A plugin for Egui integration into Bevy"
@@ -84,7 +84,7 @@ name = "file_browse"
 required-features = ["render"]
 
 [dependencies]
-egui = { version = "0.35", default-features = false }
+egui = { version = "0.36", default-features = false }
 bevy_a11y = { version = "0.19", optional = true }
 bevy_app = { version = "0.19" }
 bevy_camera = { version = "0.19" }
@@ -116,7 +116,7 @@ bevy_color = { version = "0.19", optional = true }
 bevy_shader = { version = "0.19", optional = true }
 bevy_transform = { version = "0.19", optional = true }
 encase = { version = "0.12", optional = true }
-itertools = { version = "0.14", optional = true }
+itertools = { version = "0.15", optional = true }
 wgpu-types = { version = "29.0.3", optional = true }
 
 # `bevy_ui` feature
@@ -159,7 +159,7 @@ bevy = { version = "0.19", default-features = false, features = [
     "x11",
     "zstd_rust"
 ] }
-egui = { version = "0.35", default-features = false, features = ["bytemuck"] }
+egui = { version = "0.36", default-features = false, features = ["bytemuck"] }
 
 [target.'cfg(not(target_arch = "wasm32"))'.dev-dependencies]
 bevy = { version = "0.19", default-features = false, features = ["accesskit_unix"] }
